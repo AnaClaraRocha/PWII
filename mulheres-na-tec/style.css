@@ -1,0 +1,680 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #F9F9F9;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/fundo.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 200px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #CAADDE;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #C886E5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #C886E5;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #CAADDE;
+    background: #CAADDE;
+    transition: .5s;
+}
+nav .fa{
+    display: none;
+}
+
+.gradient{
+    background: rgb(200,134,229);
+    background: linear-gradient(90deg, rgba(200,134,229,1) 25%, rgba(202,173,222,1) 54%, rgba(242,227,194,1) 95%);
+    height: 6px;
+}
+
+/*-------- media screen only --------*/
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #CAADDE;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
+
+.carreiras-ti{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 0.5%;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    margin-top: -1%;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    color: #CAADDE;
+}
+
+h2{
+    margin-top: 2%;
+    color: #C886E5;
+    margin-bottom: 0.5%;
+}
+
+.texto-carreiras{
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    border: solid #CAADDE 1px;
+    padding-bottom: 1%;
+    margin-bottom: 2%;
+}
+
+.texto-carreiras img, .p-carreiras{
+    display: inline-block;
+}
+
+.texto-carreiras img{
+    width: 45%; 
+}
+
+.p-carreiras{
+    width: 50%;
+    text-align: left;
+    align-items: center;
+}
+
+.texto-carreiras:hover{
+    box-shadow: 0 0 5px 0px rgba(202, 173, 222,1);
+}
+
+.cards-carreiras{
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto-carreiras-sml{
+    background-color: white;
+    border-radius: 10px;
+    width: 33.33%;
+    border: solid #CAADDE 1px;
+    padding-bottom: 1%;
+    margin-bottom: 2%;
+    margin-right: 0.5%;
+    margin-left: 0.5%;
+}
+
+.p-carreiras-sml{
+    text-align: center;
+}
+
+.texto-carreiras-sml:hover{
+    box-shadow: 0 0 5px 0px rgba(202, 173, 222,1);
+}
+
+#gestao-ti{
+    padding-top: 2%;
+}
+
+#funcao-full{
+    padding-top: 6%;
+}
+
+#analista{
+    padding-top: 2%;
+}
+
+.perfil-ti{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.perfil-ti h1{
+    margin-bottom: 1%;
+}
+
+.p-perfil{
+    width: 70%;
+    text-align: left;
+}
+
+.texto-perfil{
+    width: 70%;
+    padding-bottom: 1%;
+    margin-bottom: 2%;
+    display: flex;
+    margin-left: 15%;
+}
+
+.texto-perfil img, .p-perfil{
+    display: inline-block;
+}
+
+.texto-perfil img{
+    width: 26%; 
+    height: 26%;
+    margin-right: 3%;
+    margin-top: 0.5%;
+}
+
+.esteriotipo img{
+    width: 50%;
+}
+
+#mulher-carreira{
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.texto-mulher-ti{
+    width: 76%;
+    margin-left: 12%;
+}
+
+.texto-mulher-ti p{
+    text-align: justify;
+    margin-bottom: 1%;
+}
+
+.graficos{
+    margin-bottom: 1%;
+}
+
+.graficos img{
+    width: 25%;
+}
+
+.hist-mulheres{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+  .cards-mulheres {
+    flex-grow: 1;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 1.5%;
+
+  }
+  .cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 32px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .cards__item {
+    height: 400px;
+  }
+  .card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    border-radius: 10px;
+  }
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    pointer-events: none;
+  }
+  .card:nth-child(1) {
+    background-image: url(images/mulheres/1.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
+  .card:nth-child(2) {
+    background-image: url(images/mulheres/2.jpeg);
+    background-position: center;
+    background-size: auto;
+  }
+  .card:nth-child(3) {
+    background-image: url(images/mulheres/3.jpeg);
+    background-position: center;
+  }
+  .card:nth-child(4) {
+    background-image: url(images/mulheres/4.jpeg);
+    background-position: center;
+  }
+  .card:nth-child(5) {
+    background-image: url(images/mulheres/5.jpeg);
+    background-position: center;
+  }
+  .card:nth-child(6) {
+    background-image: url(images/mulheres/6.jpeg);
+    background-position: center;
+  }
+  .card:nth-child(7) {
+    background-image: url(images/mulheres/7.jpeg);
+    background-position: center;
+  }
+  .card:nth-child(8) {
+    background-image: url(images/mulheres/8.jpeg);
+    background-position: center;
+  }
+
+  .card__frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .card__picture {
+    margin-bottom: 12px;
+    filter: invert(1);
+  }
+  .card__picture img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  .card__title {
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .card__overlay {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .card__overlay::before {
+    content: "Ler";
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: #C886E5;
+    font-weight: bolder;
+  }
+  .card__overlay:hover, .card__overlay:focus {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+    border-radius: 0;
+    opacity: 0.9;
+  }
+  .card__overlay:hover::before, .card__overlay:focus::before {
+    content: none;
+  }
+  .card .card__overlay {
+    background-color: #F9F9F9;
+  }
+
+  .card__content {
+    z-index: 1;
+    padding: 20px;
+    line-height: 1.4;
+    opacity: 0;
+    visibility: hidden;
+    box-sizing: border-box;
+    pointer-events: none;
+    transition: 0s;
+  }
+  .card__content p{
+      text-align: left;
+  }
+  .card__overlay:hover ~ .card__content {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.2s 0.3s;
+  }
+  .card__content h2 {
+    margin: 0;
+    margin-bottom: 16px;
+    z-index: 21;
+  }
+
+#qnt-mulheres{
+    margin-bottom: 2%;
+}
+
+#iniciativas{
+    width: 100%;
+}
+
+#iniciativas h1{
+    text-align: center;
+}
+
+.iniciativas-container {
+    width: 80%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 13%;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+}
+
+.card-iniciativas{
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-bottom: -18%;
+}
+
+.iniciativas-container .card-iniciativas {
+    position: relative;
+    border-radius: 10px;
+}
+
+.iniciativas-container .card-iniciativas .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    transition: 0.7s;
+    z-index: 1;
+}
+
+.iniciativas-container .card-iniciativas:nth-child(1) .icon {
+    background-image: url(images/iniciativas/ada.jpeg);
+    background-size: 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.iniciativas-container .card-iniciativas:nth-child(2) .icon {
+    background-image: url(images/iniciativas/infopreta.jpeg);
+    background-size: 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.iniciativas-container .card-iniciativas:nth-child(3) .icon {
+    background-image: url(images/iniciativas/minas.jpeg);
+    background-size: 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.iniciativas-container .card-iniciativas:nth-child(4) .icon {
+    background-image: url(images/iniciativas/programaria.jpeg);
+    background-size: 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.iniciativas-container .card-iniciativas:nth-child(5) .icon {
+    background-image: url(images/iniciativas/ufabc.jpeg);
+    background-size: 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.iniciativas-container .card-iniciativas:nth-child(6) .icon {
+    background-image: url(images/iniciativas/womakers.jpeg);
+    background-size: 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+
+.iniciativas-container .card-iniciativas .icon .fa {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.7s;
+    color: #fff;
+}
+
+.iniciativas-container .card-iniciativas .face {
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.iniciativas-container .card-iniciativas .face.face1 {
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.iniciativas-container .card-iniciativas:hover .face.face1{
+    background: #ffffff;
+    transform: translateY(0px);
+}
+
+.iniciativas-container .card-iniciativas .face.face1 .content {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.iniciativas-container .card-iniciativas:hover .face.face1 .content {
+    opacity: 1;
+}
+
+.iniciativas-container .card-iniciativas .face.face1 .content i{
+    max-width: 100px;
+}
+
+.iniciativas-container .card-iniciativas .face.face2 {
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    transform: translateY(-100px);
+}
+
+.iniciativas-container .card-iniciativas:hover .face.face2{
+    transform: translateY(0);
+}
+
+.iniciativas-container .card-iniciativas .face.face2 .content p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #414141;
+}
+
+.iniciativas-container .card-iniciativas .face.face2 .content h3 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    color: #414141;
+}
+
+.iniciativas-container .card-iniciativas .face.face2 .content h4 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    margin-top: -8%;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    color: #414141;
+}
+
+.iniciativas-container .card-iniciativas .face.face2 .content p {
+   font-size: 12px;
+} 
+
+/*---- small screen only -----*/
+@media(max-width: 700px){
+    .cta h1{
+        font-size: 20px;
+    }
+}
+
+/*---- footer ----*/
+.footer{
+    width: 100%;
+    text-align: center;
+    margin-top: 8%;  
+    padding-bottom: 3%;  
+}
+.footer h4{
+    font-weight: 600;
+}
+
+
+/*------  small screen only -------*/
+.sub-header h1{
+    font-size: 24px;
+}
+.blog-left h2{
+    font-size: 24px;
+}
+.comment-box h3{
+    font-size: 23px;
+}
+
+.links{
+    text-align: left;
+    margin-left: 1%;
+}
+
+.links a{
+    text-decoration: none;
+    color: #414141;
+}
+
+.voltar{
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+.voltar a{
+    text-decoration: none;
+    color: #C886E5;
+    text-align: left;
+    margin-left: 1%;
+}
