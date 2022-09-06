@@ -1,0 +1,63 @@
+body{
+    background: rgb(114,169,236);
+    background: linear-gradient(90deg, rgba(114,169,236,1) 0%, rgba(174,0,255,1) 43%, rgba(183,231,241,1) 100%);
+}
+
+h3{
+    margin-top: 2%;
+    margin-bottom: -2%;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif, sans-serif;
+}
+
+form{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 25%;
+}
+
+img{
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+label{
+    color:#72a9ec;
+    font-size: 150%;
+    font-family:Georgia, 'Times New Roman', Times, serif, sans-serif;
+}
+
+.divisao{
+    background-color: black;
+    color: black;
+    width: 2px;
+    height: 5px;
+}
+
+h2{
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif, sans-serif;
+    color: #72a9ec;
+}
+
+h4{
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif, sans-serif;
+    color: #ae00ff;
+}
+
+p{
+    font-size: 120%;
+    text-align: center;
+}
+
+h6{
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif, sans-serif;
+    color: #5f5f5f;
+}
+
+
+
